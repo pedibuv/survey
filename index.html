@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+<div class="container">
+    <h1 id="title">Survey form</h1>
+    <p id="description">We appreciate your participation in this survey as it plays a crucial role in enhancing our health and nutrition initiatives</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            <label id="email-label"> Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+            <label id="number-label"> Age
+                <input type="number" id="number" min="10" max="100" placeholder="Enter your age" required>
+            </label>
+        </fieldset>
+        <label>Select your primary dietary need:
+        <select id="dropdown">
+            <option>Weight Loss</option>
+            <option>Weight Gain</option>
+            <option>Balanced Nutrition</option>
+            <option>Vegetarian/Vegan</option>
+        </select>
+        </label>
+        <fieldset>How often do you exercise?
+            <label>
+                <input type="radio" name="Regularly (3-5 times a week)" value="regularly" checked> Regularly (3-5 times a week)
+            </label>
+            <label>
+                <input type="radio" name="Occasionally (1-2 times a week)" value="occasionally"> Occasionally (1-2 times a week)
+            </label>
+            <label>
+                <input type="radio" name="Rarely or Never" value="rarely-or-ever"> Rarely or Never
+            </label>
+        </fieldset>
+        <fieldset>Which of the following factors affect your health and nutrition?
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="time-constraints"> Lack of time for healthy eating
+            </label>
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="healthy-food-accessibility">Accessibility of healthy foods
+            </label>
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="food-allergies"> Food allergies or intolerances
+            </label>
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="weight-management"> Weight management
+            </label>
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="family-eating-habits"> Family eating habits
+            </label>
+            <label>
+                <input type="checkbox" name="dietary-concerns" value="food-budget"> Budget for food
+            </label>
+        </fieldset>
+        <label>Any additional comments or preferences about your diet and health:
+            <textarea placeholder="Enter your comments here..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit"/>
+    </form>
+</div>
+</body>
