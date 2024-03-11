@@ -44,13 +44,28 @@ form {
     border-radius: 4px;
 }
 
-fieldset.user_data {
-    border: none;
-    border-bottom: 3px solid;
-}
 
 fieldset {
     border: none;
+
+    textarea#additionalComments {
+        border: 1px solid;
+        border-radius: 7px;
+    }
+
+    &.user_data {
+        border-bottom: 3px solid;
+
+        input {
+            width: 100%;
+            min-height: 2.4em;
+            height: 38px;
+            box-sizing: border-box;
+            border-radius: 7px;
+            border: 3px solid #1c6c6c;
+            background-color: #c7f3f3;
+        }
+    }
 }
 
 li {
@@ -66,23 +81,6 @@ ul, li {
 label {
     display: block;
     margin-bottom: 15px;
-}
-
-.user_data {
-    input {
-        width: 100%;
-        min-height: 2.4em;
-        height: 38px;
-        box-sizing: border-box;
-        border-radius: 7px;
-        border: 3px solid #1c6c6c;
-        background-color: #c7f3f3;
-    }
-}
-
-#additionalComments {
-    border: 1px solid;
-    border-radius: 7px;
 }
 
 select {
